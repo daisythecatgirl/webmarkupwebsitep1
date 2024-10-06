@@ -22,103 +22,16 @@ img
         background-image: url("https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673-1200x1200.png");
     }
 
-
-
-
-#mainmenu
-    {
-        
-        
-        float: right;
-    }
-#mainmenu > a > img
-    {
-        display: block;
-        margin: auto;
-        
-    }
-#mainmenu > ul 
-    {
-        display: inline;
-        width: 400px;
-    }
-#mainmenu > ul > li
-    {
-        display: inline;
-    }
-#mainmenu > form
-    {
-        width: 20%;
-        line-height: 7en;
-        float: left;
-    }
-#mainmenu > form > h3
-    {
-        text-align: center;
-    }
-
-#company_payoff
-    {
-        clear: both;
-        padding-top: 2en;
-        padding-bottom: 2en;
-    }
-
-#company_payoff > h1, #company_payoff > h2
-    {
-        text-align: center;
-        text-transform: uppercase;
-    }
-/*Hier maak je aside*/
-#company_aside
-main
-    {
-        clear: both;
-        width: 100%;
-    }
-main > .main_article
-    {
-        width: 50%;
-        float: left;
-    }
 main > .main_article > a
     {
+        float: right;
+    }
+
+
+
+
+#text_mover1
+    {
         float: left;
     }
 
-#company_footer
-    {
-        clear: both;
-        width: 100%;
-    }
-
-#company_footer_section_1
-    {
-        width: 30%;
-        float: left;
-    }
-#company_footer_section_2
-    {
-        width: 70%;
-        float: left;
-    }
-#company_footer_section_2 > aside
-    {
-       width: 30%;
-       float: left; 
-    }
-#company_footer_section_2 > article
-    {
-       width: 30%; 
-       float: left;
-    }
-#company_footer_section_2 > section
-    {
-        width: 40%;
-        float: left;
-    }
-#company_footer_section_2 > section > a > img
-    {
-      width: 20%; 
-      margin: 5%; 
-    }
