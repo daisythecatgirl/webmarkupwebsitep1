@@ -64,7 +64,7 @@
     color: #FFF;
     text-decoration: none;
     }
-#menu-toggle ~ .menu
+#menu-toggle:checked ~ .menu
     {
     left: 0;
     }
