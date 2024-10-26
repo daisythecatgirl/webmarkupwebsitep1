@@ -9,16 +9,16 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #FEF1F1;
 }
 
 #mainmenu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #B2ABAB;
     padding: 20px;
-    color: white;
+    ;
 }
 
 #mainmenu ul {
@@ -28,21 +28,21 @@ body {
 }
 
 #mainmenu a {
-    color: white;
+    color:#060A0A;
     text-decoration: none;
-    text-transform: uppercase;
 }
 
 .contact-button {
     padding: 8px 16px;
-    background-color: #00c4ff;
+    background-color: #12ABAD;
     color: white;
     border-radius: 4px;
-    text-transform: uppercase;
-    text-decoration: none;
+    border-style: solid;
+    border-color: black;
+    
 }
 
-/* Header */
+
 #contact_header {
     text-align: center;
     padding: 2em 0;
@@ -59,14 +59,14 @@ body {
     color: #666;
 }
 
-/* Contact Form Grid */
+
 #contact_form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
     max-width: 600px;
     margin: 2em auto;
-    background-color: #fff;
+    background-color: #FEF1F1;
     padding: 2em;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -82,7 +82,7 @@ body {
 #contact_form textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #0e0d0d;
     border-radius: 4px;
 }
 
@@ -95,8 +95,8 @@ body {
 #contact_form button {
     grid-column: span 2;
     padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #12ABAD;
+    color: black;
     border: none;
     border-radius: 4px;
     font-size: 1em;
@@ -104,23 +104,27 @@ body {
 }
 
 #contact_form button:hover {
-    background-color: #45a049;
+    background-color: #c42015;
 }
 
-/* Footer */
+
+
 footer {
+    margin-top: 5%;
+    background-color: #B2ABAB;
+    color: #060A0A;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-footer section {
-    padding: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px 20px;
+    text-align: left;
 }
 
-/* Responsive Design */
+.Bold{
+    font-weight: bold;
+}
+
+
 @media (max-width: 768px) {
     #contact_form {
         grid-template-columns: 1fr;

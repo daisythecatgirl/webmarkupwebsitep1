@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #FEF1F1;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -17,9 +17,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #B2ABAB;
     padding: 20px;
-    color: white;
+    ;
 }
 
 #mainmenu ul {
@@ -29,25 +29,24 @@ body {
 }
 
 #mainmenu a {
-    color: white;
+    color:#060A0A;
     text-decoration: none;
-    text-transform: uppercase;
 }
 
 .contact-button {
     padding: 8px 16px;
-    background-color: #00c4ff;
-    color: white;
+    background-color: #12ABAD;
+    color: #FEF1F1;
     border-radius: 4px;
-    text-transform: uppercase;
-    text-decoration: none;
+    border-style: solid;
+    border-color: black;
+    
 }
 
-/* Header */
 #shop_header {
     text-align: center;
     padding: 2em 0;
-    background-color: #f4f4f4;
+    background-color: #FEF1F1;
 }
 
 #shop_header h1 {
@@ -58,10 +57,9 @@ body {
 
 #shop_header p {
     font-size: 1em;
-    color: #666;
+    color: #000000;
 }
 
-/* Product Grid (3 Columns, 2 Rows) */
 #product_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -75,9 +73,9 @@ body {
 #product_grid section {
     text-align: center;
     padding: 20px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #E22325;
     border-radius: 8px;
-    background-color: #fff;
+    background-color: #FEF1F1;
 }
 
 #product_grid img {
@@ -92,20 +90,23 @@ body {
     color: #333;
 }
 
-/* Footer */
 footer {
+    margin-top: 5%;
+    background-color: #B2ABAB;
+    color: #060A0A;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-footer section {
-    padding: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px 20px;
+    text-align: left;
 }
 
-/* Responsive Design */
+.Bold{
+    font-weight: bold;
+}
+
+
+
 @media (max-width: 768px) {
     #product_grid {
         grid-template-columns: 1fr;

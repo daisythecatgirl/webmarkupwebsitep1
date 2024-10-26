@@ -13,43 +13,38 @@ body {
     min-height: 100vh;
 }
 
-/* Navigation */
 #mainmenu {
-    display: grid;
-    grid-template-columns: auto 1fr;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #B2ABAB;
     padding: 20px;
-    color: white;
+    ;
 }
 
 #mainmenu ul {
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
     gap: 20px;
     list-style: none;
-    justify-content: end;
 }
 
 #mainmenu a {
-    color: white;
+    color:#060A0A;
     text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
 }
 
-#mainmenu a:hover {
-    text-decoration: underline;
+.contact-button {
+    padding: 8px 16px;
+    background-color: #12ABAD;
+    color: #FEF1F1;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: black;
+    
 }
-
 /* Hero Section */
 #hero {
-    display: grid;
-    grid-template-rows: auto auto auto;
-    text-align: center;
-    gap: 10px;
-    background: #333;
-    color: white;
+    
 }
 
 #hero-image {
@@ -93,19 +88,22 @@ body {
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-/* Footer */
 footer {
+    margin-top: 5%;
+    background-color: #B2ABAB;
+    color: #060A0A;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    background-color: #333;
-    color: white;
-    padding: 20px;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    text-align: center;
+    padding: 40px 20px;
+    text-align: left;
 }
 
-/* Responsive Design */
+.Bold{
+    font-weight: bold;
+}
+
+
 @media (max-width: 768px) {
     #hero-image {
         height: 300px;
