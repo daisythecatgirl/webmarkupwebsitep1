@@ -7,18 +7,19 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; 
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #FEF1F1;
+    margin: 0;
 }
 
 #mainmenu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #B2ABAB;
     padding: 20px;
-    color: white;
+    ;
 }
 
 #mainmenu ul {
@@ -28,32 +29,33 @@ body {
 }
 
 #mainmenu a {
-    color: white;
+    color:#060A0A;
     text-decoration: none;
-    text-transform: uppercase;
 }
 
 .contact-button {
     padding: 8px 16px;
-    background-color: #00c4ff;
+    background-color: #12ABAD;
     color: white;
     border-radius: 4px;
-    text-transform: uppercase;
-    text-decoration: none;
+    border-style: solid;
+    border-color: black;
+    
 }
 
-/* Header Section */
+
+
 #company_intro {
     text-align: center;
     padding: 40px 20px;
-    background-color: #fff;
+    background-color: #FEF1F1;
     margin: 20px auto;
     max-width: 800px;
 }
 
-/* Main Section - Centered Testimonials */
+
 main {
-    align-items: center; /* Center align all testimonials */
+    align-items: center;
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
@@ -63,52 +65,45 @@ main {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 20px;
-    background-color: #fff;
+    background-color: #FEF1F1;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    width: 100%; /* Ensure full width inside the centered main section */
+    width: 100%;
     align-items: start;
 }
 
-/* Square Image */
+
 .testimonial img {
     width: 100px;
-    height: 100px;
+    height: 300px;
     object-fit: cover;
     border-radius: 0; 
 }
 
 
 
-/* Centered, Underlined Name */
+
 .testimonial p:first-child {
     font-weight: bold;
     color: #333;
     text-align: center;
     margin-bottom: 10px;
 }
+
 footer {
-    display: flex;
-    justify-content: space-around;
-    padding: 2em 0;
-    background-color: #333;
-    color: white;
+    margin-top: 5%;
+    background-color: #B2ABAB;
+    color: #060A0A;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px 20px;
+    text-align: left;
 }
 
-footer section {
-    width: 30%;
+.Bold{
+    font-weight: bold;
 }
 
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer p {
-    margin-top: 10px;
-    font-size: 0.9em;
-    line-height: 1.6;
-    color: #ccc;
-} 

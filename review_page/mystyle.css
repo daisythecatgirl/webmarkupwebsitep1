@@ -7,20 +7,19 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Makes the body at least as tall as the viewport */
+    min-height: 100vh; 
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #FEF1F1;
     margin: 0;
 }
 
-/* Navigation Bar */
 #mainmenu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #B2ABAB;
     padding: 20px;
-    color: white;
+    ;
 }
 
 #mainmenu ul {
@@ -30,64 +29,64 @@ body {
 }
 
 #mainmenu a {
-    color: white;
+    color:#060A0A;
     text-decoration: none;
-    text-transform: uppercase;
 }
 
 .contact-button {
     padding: 8px 16px;
-    background-color: #00c4ff;
+    background-color: #12ABAD;
     color: white;
     border-radius: 4px;
-    text-transform: uppercase;
-    text-decoration: none;
+    border-style: solid;
+    border-color: black;
+    
 }
 
-/* Header Section */
+
 #company_intro {
     text-align: center;
     padding: 40px 20px;
-    background-color: #fff;
+    background-color: #FEF1F1;
     border-radius: 8px;
     margin: 20px;
 }
 
-/* Main Section - Reviews */
+
 main {
-    flex: 1; /* Allows main content to grow and push footer down if necessary */
+    flex: 1; 
     display: grid;
     gap: 20px;
     padding: 0 20px;
 }
 
-.reviews-title h2 {
+.reviews_title h2 {
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     color: #333;
     margin-bottom: 20px;
 }
 
 .reviews {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns for reviews */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
 }
 
-.review-card {
+.review_card {
     padding: 20px;
-    background-color: #fff;
+    background-color: #FEF1F1;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.review-card h3 {
+.review_card h3 {
     font-size: 18px;
-    color: #333;
+    color: #000000;
     margin-bottom: 10px;
 }
 
-.review-card p {
+.review_card p {
     font-size: 14px;
     color: #555;
 }
@@ -99,13 +98,19 @@ main {
     margin-top: 10px;
 }
 
-/* Footer Section */
+
 footer {
-    background-color: #333;
-    color: white;
+    margin-top: 5%;
+    background-color: #B2ABAB;
+    color: #060A0A;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 40px 20px;
-    text-align: center;
+    text-align: left;
 }
+
+.Bold{
+    font-weight: bold;
+}
+
