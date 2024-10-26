@@ -1,50 +1,30 @@
 * {
-    border: 0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    width: 100%;
-    margin: auto;
-    background-color: #f4f4f4;
-    background-repeat: no-repeat;
-    background-size: cover;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
 }
 
-img {
-    width: 300px;
-}
-
-#company_payoff {
-    background-image: url("https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673-1200x1200.png");
-    background-size: cover;
-    padding: 70px;
-    text-align: center;
-}
-
-#company_payoff h1, #company_payoff h2 {
-    color: white;
-    text-transform: uppercase;
-}
-
-nav#mainmenu {
+#mainmenu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #333;
-    padding: 1em;
+    padding: 20px;
+    color: white;
 }
 
 #mainmenu ul {
     display: flex;
-    list-style-type: none;
-}
-
-#mainmenu li {
-    margin: 10px;
+    gap: 20px;
+    list-style: none;
 }
 
 #mainmenu a {
@@ -53,42 +33,96 @@ nav#mainmenu {
     text-transform: uppercase;
 }
 
-#mainmenu a:hover {
-    text-decoration: underline;
+.contact-button {
+    padding: 8px 16px;
+    background-color: #00c4ff;
+    color: white;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
-main {
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
-}
-
-.main_article {
-    display: flex;
-    width: 100%;
-    height: 300px;
-}
-
-
-
-footer {
-    display: flex;
-    justify-content: space-around;
+/* Header */
+#contact_header {
+    text-align: center;
     padding: 2em 0;
+}
+
+#contact_header h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#contact_header p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Contact Form Grid */
+#contact_form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    max-width: 600px;
+    margin: 2em auto;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact_form label {
+    grid-column: span 2;
+    font-size: 1em;
+    color: #333;
+}
+
+#contact_form input,
+#contact_form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact_form textarea {
+    grid-column: span 2;
+    height: 100px;
+    resize: none;
+}
+
+#contact_form button {
+    grid-column: span 2;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#contact_form button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     background-color: #333;
     color: white;
+    padding: 20px;
+    text-align: center;
 }
-
 footer section {
-    width: 30%;
+    padding: 10px;
 }
 
-#img_right
-    {
-        
-        margin-left: auto;
-        order: 2;
-        
-        
-        
+/* Responsive Design */
+@media (max-width: 768px) {
+    #contact_form {
+        grid-template-columns: 1fr;
     }
+}

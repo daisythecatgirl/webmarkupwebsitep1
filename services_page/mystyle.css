@@ -1,94 +1,112 @@
 * {
-    border: 0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    width: 100%;
-    margin: auto;
-    background-color: #f4f4f4;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "nav"
+        "header"
+        "main"
+        "footer";
+    min-height: 100vh;
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
-img {
-    width: 300px;
-}
-
-#company_payoff {
-    background-image: url("https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673-1200x1200.png");
-    background-size: cover;
-    padding: 70px;
-    text-align: center;
-}
-
-#company_payoff h1, #company_payoff h2 {
-    color: white;
-    text-transform: uppercase;
-}
-
-nav#mainmenu {
-    display: flex;
-    justify-content: space-between;
+/* Navigation */
+#mainmenu {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
     background-color: #333;
-    padding: 1em;
+    padding: 20px;
 }
 
 #mainmenu ul {
-    display: flex;
-    list-style-type: none;
-}
-
-#mainmenu li {
-    margin: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    list-style: none;
+    justify-content: end;
 }
 
 #mainmenu a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 #mainmenu a:hover {
     text-decoration: underline;
 }
 
-main {
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
-}
-
-.main_article {
-    display: flex;
-    width: 100%;
-    height: 300px;
-}
-
-
-
-footer {
-    display: flex;
-    justify-content: space-around;
-    padding: 2em 0;
-    background-color: #333;
+/* Header Section */
+#company_payoff {
+    grid-area: header;
+    display: grid;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #444;
     color: white;
 }
 
-footer section {
-    width: 30%;
+/* Main Content */
+main {
+    grid-area: main;
+    padding: 40px 20px;
+    display: grid;
+    justify-content: center;
 }
 
-#img_right
-    {
-        
-        margin-left: auto;
-        order: 2;
-        
-        
-        
+.service_section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+}
+
+.service_section article {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service_section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #mainmenu ul {
+        grid-auto-flow: row;
+        justify-content: center;
     }
+
+    #company_payoff {
+        padding: 20px;
+    }
+}
