@@ -71,7 +71,7 @@ body {
 }
 
 #product_grid section {
-    text-align: center;
+    text-align: start;
     padding: 20px;
     border: 1px solid #E22325;
     border-radius: 8px;

@@ -50,37 +50,30 @@ body {
     height: auto;
 }
 
-#hero h1, #hero p {
-    padding: 10px 20px;
-    background: rgba(0, 0, 0, 0.5);
-    margin: 0 auto;
-    max-width: 80%;
-}
 
 
 #content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 40px 20px;
     max-width: 1200px;
     margin: auto;
 }
 
-#intro {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
+.intro{
+    grid-column-start: 1;
+
+
 }
 
-#intro img {
-    grid-column: span 2;
-    margin: auto;
-    width: 150px;
+#content img {
+    justify-content: start;
+    width: 300px;
+    
 }
 
-#intro article {
+#content article {
     background: #FEF1F1;
     padding: 20px;
     

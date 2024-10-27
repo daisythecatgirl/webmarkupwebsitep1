@@ -44,7 +44,10 @@ body {
 
 
 #contact_header {
-    text-align: center;
+    display: grid;
+    max-width: 600px;
+    grid-template-columns: 1fr;
+    margin: 2em auto;
     padding: 2em 0;
 }
 
@@ -56,13 +59,13 @@ body {
 
 #contact_header p {
     font-size: 1em;
-    color: #666;
+    color: black;
 }
 
 
 #contact_form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 15px;
     max-width: 600px;
     margin: 2em auto;
@@ -73,7 +76,6 @@ body {
 }
 
 #contact_form label {
-    grid-column: span 2;
     font-size: 1em;
     color: #333;
 }
@@ -87,13 +89,11 @@ body {
 }
 
 #contact_form textarea {
-    grid-column: span 2;
     height: 100px;
     resize: none;
 }
 
 #contact_form button {
-    grid-column: span 2;
     padding: 10px;
     background-color: #12ABAD;
     color: black;
