@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #FEF1F1;
     color: #333;
     display: grid;
     grid-template-rows: auto auto 1fr auto;
@@ -42,10 +42,8 @@ body {
     border-color: black;
     
 }
-/* Hero Section */
-#hero {
-    
-}
+
+
 
 #hero-image {
     width: 100%;
@@ -59,7 +57,7 @@ body {
     max-width: 80%;
 }
 
-/* Content Grid */
+
 #content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -83,10 +81,9 @@ body {
 }
 
 #intro article {
-    background: #fff;
+    background: #FEF1F1;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 footer {
     margin-top: 5%;
