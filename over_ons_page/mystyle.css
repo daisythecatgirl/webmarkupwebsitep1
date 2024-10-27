@@ -5,8 +5,6 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     min-height: 100vh; 
     font-family: Arial, sans-serif;
     background-color: #FEF1F1;
@@ -46,10 +44,10 @@ body {
 
 
 #company_intro {
-    text-align: center;
+    text-align: left;
+    margin: 2em auto;
     padding: 40px 20px;
     background-color: #FEF1F1;
-    margin: 20px auto;
     max-width: 800px;
 }
 
@@ -63,6 +61,7 @@ main {
 
 .testimonial {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     background-color: #FEF1F1;
     padding: 20px;
@@ -78,12 +77,6 @@ main {
     border-radius: 0;
 }
 
-.testimonial p:first-of-type {
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    margin-bottom: 10px;
-}
 
 .testimonial p {
     margin: 0
@@ -92,7 +85,7 @@ main {
 footer {
     margin-top: 5%;
     background-color: #B2ABAB;
-    color: #060A0A;
+    color: #000000;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
