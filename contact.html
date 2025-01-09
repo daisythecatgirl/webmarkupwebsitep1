@@ -4,25 +4,45 @@
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta name="author" content="Daisy">
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="css/contact_mystyle.css">
+    <link rel="stylesheet" href="css/burgerstyle.css">
     <title>Your Barber Shop</title>
 </head>
 <body>
+    <header class="mobilemenuu">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <!--Hamburgermenu-->
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="menu">
+            <ul> 
+                <li><a href=index.html>Homepage</a></li>
+                <li><a href=reviews.html>Reviews</a></li>
+                <li><a href=services.html>Service</a></li>
+                <li><a href=aboutus.html>Over Ons</a></li>
+                <li><a href=shoppage.html>Winkel</a></li>
+                <li><a href=contact.html>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav id="mainmenu">
-        <a href="#">
+    <header class="pc-mainmenu">
+        <!--Verander # in een klikbaar iets zoals bijv. index.html (de homepage)-->
+        <a href="index.html">
             <img src="img/logo.webp" alt="Logo" title="Your Barber Shop" width="40" height="40">
         </a>
         <ul>
-            <li><a href="file:///C:/Users/daisy/Documents/webmarkup/webmarkupwebsitep1/home_page/index.html">Home</a></li>
-            <li><a href="file:///C:/Users/daisy/Documents/webmarkup/webmarkupwebsitep1/review_page/index.html">Reviews</a></li>
-            <li><a href="file:///C:/Users/daisy/Documents/webmarkup/webmarkupwebsitep1/services_page/index.html">Service</a></li>
-            <li><a href="file:///C:/Users/daisy/Documents/webmarkup/webmarkupwebsitep1/over_ons_page/index.html">Over Ons</a></li>
-            <li><a href="file:///C:/Users/daisy/Documents/webmarkup/webmarkupwebsitep1/shop_page/index.html">Winkel</a></li>
-            <li><a href="file:///C:/Users/daisy/Documents/webmarkup/webmarkupwebsitep1/contact_page/index.html" class="contact-button">Contact</a></li>
+            <li><a href=index.html>Homepage</a></li>
+            <li><a href=reviews.html>Reviews</a></li>
+            <li><a href=services.html>Service</a></li>
+            <li><a href=aboutus.html>Over Ons</a></li>
+            <li><a href=shoppage.html>Winkel</a></li>
+            <li><a href=contact.html class="contact-button">Contact</a></li>
         </ul>
-        
-    </nav>
+    </header>
 
   
     <header id="contact_header">
@@ -34,7 +54,9 @@
 
    
     <main>
+        <!--Method="post" mist hier-->
     <form action = "" Id = "contact_form">
+        <!--Hier nog een fieldset toevoegen-->
         <label for="name">Naam</label>
         <input type="text" id="name" placeholder="Vul je naam in">
 
@@ -46,7 +68,7 @@
 
         <label for="message">Bericht</label>
         <textarea id="message" placeholder="Typ je bericht hier"></textarea>
-
+        <!--Vgm geen button maar een input type?-->
         <button type="submit">Verzenden</button>
     </form>
     </main>
@@ -58,6 +80,7 @@
 
         </section>
         <section class = "footer_section">
+            <!--Doe hier de barbershop links en niet de Figma default :)-->
             <p class = "Bold">Use cases</p>
             <p>&nbsp</p>
             <p>UI design</p>
@@ -92,6 +115,6 @@
             
         </section>
     </footer>
-
+    <!--Nog een footer/section voor de cookies -->
 </body>
 </html>

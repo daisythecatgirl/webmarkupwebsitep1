@@ -12,7 +12,7 @@ body {
     background-color: #FEF1F1;
 }
 
-#mainmenu {
+.pc-mainmenu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,19 +20,25 @@ body {
     padding: 20px;
     ;
 }
-
-#mainmenu ul {
+.pc-mainmenu nav ul
+{
     display: flex;
     gap: 20px;
     list-style: none;
 }
 
-#mainmenu a {
+.pc-mainmenu nav ul li
+
+{
+    margin: 0 15px;
+}
+
+.pc-mainmenu nav ul li a {
     color:#060A0A;
     text-decoration: none;
 }
 
-.contact-button {
+#contact-button {
     padding: 8px 16px;
     background-color: #12ABAD;
     color: white;
@@ -123,10 +129,25 @@ footer {
 .Bold{
     font-weight: bold;
 }
-
-
-@media (max-width: 768px) {
-    #contact_form {
-        grid-template-columns: 1fr;
+@media only screen and (max-width: 768px)
+{
+    .pc-mainmenu
+    {
+        display: none;
     }
 }
+@media only screen and (min-width: 769px)
+{
+    .mobilemenuu
+    {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+

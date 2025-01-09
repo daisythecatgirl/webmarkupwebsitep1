@@ -83,11 +83,12 @@ main {
 }
 
 footer {
+    list-style: none;
     margin-top: 5%;
     background-color: #B2ABAB;
     color: #000000;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 40px 20px;
     text-align: left;
