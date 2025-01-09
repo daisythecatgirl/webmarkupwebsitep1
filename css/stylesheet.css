@@ -1,15 +1,62 @@
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+#mainmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B2ABAB;
+    padding: 20px;
+   
+}
+
+#mainmenu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    
+ 
+
+    
+}
+
+#mainmenu a {
+    color:#060A0A;
+    text-decoration: none;
+}
+
+.Poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+.Noto_Sans{
+    font-family: 'Noto Sans', sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background-color: #FEF1F1;
+}
+
+
+
+.contact-button {
+    padding: 8px 16px;
+    background-color: #12ABAD;
+    color: white;
+    border-radius:10px;
+    border-style: solid;
+    border-color: black;
+
+    
 }
 
 .pc-mainmenu {
@@ -18,36 +65,27 @@ body {
     align-items: center;
     background-color: #B2ABAB;
     padding: 20px;
-    ;
+    
 }
-.pc-mainmenu nav ul
+
+.pc-mainmenu > ul
 {
     display: flex;
+    align-items: center;
     gap: 20px;
     list-style: none;
 }
 
-.pc-mainmenu nav ul li
+.pc-mainmenu > ul > li
 
 {
     margin: 0 15px;
 }
 
-.pc-mainmenu nav ul li a {
+.pc-mainmenu > ul > li > a {
     color:#060A0A;
     text-decoration: none;
 }
-
-#contact-button {
-    padding: 8px 16px;
-    background-color: #12ABAD;
-    color: white;
-    border-radius: 4px;
-    border-style: solid;
-    border-color: black;
-    
-}
-
 
 #contact_header {
     display: grid;
@@ -68,7 +106,6 @@ body {
     color: black;
 }
 
-
 #contact_form {
     display: grid;
     grid-template-columns: 1fr;
@@ -79,6 +116,7 @@ body {
     padding: 2em;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
 }
 
 #contact_form label {
@@ -92,11 +130,13 @@ body {
     padding: 10px;
     border: 1px solid #0e0d0d;
     border-radius: 4px;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 #contact_form textarea {
     height: 100px;
     resize: none;
+    
 }
 
 #contact_form button {
@@ -113,6 +153,196 @@ body {
     background-color: #c42015;
 }
 
+#hero-image {
+    width: 100%;
+    height: auto;
+}
+
+
+
+#content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.intro{
+    grid-column-start: 1;
+
+
+}
+
+#content img {
+    justify-content: start;
+    width: 300px;
+    
+}
+
+#content article {
+    background: #FEF1F1;
+    padding: 20px;
+}
+
+.testimonial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: #FEF1F1;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    align-items: start;
+}
+
+.testimonial img {
+    width: 150px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+
+.testimonial p {
+    margin: 0
+}
+
+#company_intro {
+    text-align: left;
+    margin: 2em auto;
+    padding: 40px 20px;
+    background-color: #FEF1F1;
+    border-radius: 8px;
+}
+
+
+main { 
+    display: grid;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.reviews_title h2 {
+    font-size: 20px;
+    text-align: left;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+}
+
+.review_card {
+    padding: 20px;
+    background-color: #FEF1F1;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review_card h3 {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.review_card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.reviewer {
+    font-style: italic;
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 40px;
+}
+
+figure {
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+img {
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+#shop_header {
+    text-align: left;
+    padding: 2em 0;
+    margin: 2em auto;
+    background-color: #FEF1F1;
+}
+
+#shop_header h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#shop_header p {
+    font-size: 1em;
+    color: #000000;
+}
+
+#product_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 2em;
+    max-width: 1000px;
+    margin: auto;
+    flex: 1;
+}
+
+#product_grid section {
+    text-align: start;
+    padding: 20px;
+    border: 1px solid #E22325;
+    border-radius: 8px;
+    background-color: #FEF1F1;
+}
+
+#product_grid img {
+    width: 100px;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#product_grid p {
+    font-size: 1em;
+    color: #333;
+}
+
 
 
 footer {
@@ -120,15 +350,106 @@ footer {
     background-color: #B2ABAB;
     color: #060A0A;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 40px 20px;
     text-align: left;
+    
 }
+
+footer > ul{
+    list-style: none;
+    text-decoration: none;
+}
+
 
 .Bold{
     font-weight: bold;
 }
+
+#menu-toggle
+    {
+     display: none;   
+    }
+
+.hamburger
+    {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 2;
+    }
+
+.hamburger span
+    {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background-color: #B2ABAB;
+    }
+
+
+.hamburger span:nth-child(1)
+    {
+    top: 0;
+    }
+
+.hamburger span:nth-child(2)
+    {
+    top: 9px;
+    }
+.hamburger span:nth-child(3)
+    {
+    bottom: 0;
+    }
+
+.menu
+    {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #12ABAD;
+    color: #FFF;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+.menu ul
+    {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    }
+
+.menu ul li
+    {
+    padding: 10px;
+    display: block;
+    clear:both;
+    width:100%
+    }
+
+.menu ul li a
+    {
+    color: #FFF;
+    text-decoration: none;
+    }
+#menu-toggle:checked ~ .menu
+    {
+    left: 0;
+    }
+#menu-toggle
+    {
+        display: none;
+    }
+
 @media only screen and (max-width: 768px)
 {
     .pc-mainmenu
@@ -138,16 +459,8 @@ footer {
 }
 @media only screen and (min-width: 769px)
 {
-    .mobilemenuu
+    .mobilehamburger
     {
         display: none;
     }
 }
-
-
-
-
-
-
-
-

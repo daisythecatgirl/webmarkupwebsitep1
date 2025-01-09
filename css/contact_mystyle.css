@@ -10,12 +10,17 @@
     align-items: center;
     background-color: #B2ABAB;
     padding: 20px;
+   
 }
 
 #mainmenu ul {
     display: flex;
     gap: 20px;
     list-style: none;
+    
+ 
+
+    
 }
 
 #mainmenu a {
@@ -23,39 +28,29 @@
     text-decoration: none;
 }
 
+.Poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+.Noto_Sans{
+    font-family: 'Noto Sans', sans-serif;
+}
 
 body {
-    font-family: Arial, sans-serif;
+    
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background-color: #FEF1F1;
 }
 
-#mainmenu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #B2ABAB;
-    padding: 20px;
-}
 
-#mainmenu ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-
-#mainmenu a {
-    color:#060A0A;
-    text-decoration: none;
-}
 
 .contact-button {
     padding: 8px 16px;
     background-color: #12ABAD;
     color: white;
-    border-radius: 10px;
+    border-radius:10px;
     border-style: solid;
     border-color: black;
 
@@ -119,6 +114,7 @@ body {
     padding: 2em;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
 }
 
 #contact_form label {
@@ -132,11 +128,13 @@ body {
     padding: 10px;
     border: 1px solid #0e0d0d;
     border-radius: 4px;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 #contact_form textarea {
     height: 100px;
     resize: none;
+    
 }
 
 #contact_form button {
@@ -158,12 +156,17 @@ footer {
     background-color: #B2ABAB;
     color: #060A0A;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 40px 20px;
     text-align: left;
+    
 }
 
+footer > ul{
+    list-style: none;
+    text-decoration: none;
+}
 
 
 .Bold{

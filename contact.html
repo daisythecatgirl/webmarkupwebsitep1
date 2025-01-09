@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="">
-    <meta name="author" content="Daisy">
-    <link rel="stylesheet" href="css/contact_mystyle.css">
-    <link rel="stylesheet" href="css/burgerstyle.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Your Barber Shop</title>
 </head>
 <body>
-    <header class="mobilemenuu">
+    <header class="mobilehamburger">
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="hamburger">
             <!--Hamburgermenu-->
@@ -30,7 +34,6 @@
     </header>
 
     <header class="pc-mainmenu">
-        <!--Verander # in een klikbaar iets zoals bijv. index.html (de homepage)-->
         <a href="index.html">
             <img src="img/logo.webp" alt="Logo" title="Your Barber Shop" width="40" height="40">
         </a>
@@ -46,8 +49,8 @@
 
   
     <header id="contact_header">
-        <h1>Neem Contact Op</h1>
-        <p>Heb je vragen of wil je een afspraak maken? Het team van HaarKunst staat voor je klaar! 
+        <h1 class="Poppins">Neem Contact Op</h1>
+        <p class="Noto_Sans">Heb je vragen of wil je een afspraak maken? Het team van HaarKunst staat voor je klaar! 
             Bel ons, stuur een e-mail of vul het contactformulier in, en we helpen je graag verder.
             We horen graag van je en kijken ernaar uit om je in onze salon te verwelkomen!</p>
     </header>
@@ -74,47 +77,33 @@
     </main>
 
  
-    <footer>
-        <section>
-           <img src="img/Screenshot 2024-10-26 132408.png" alt = "the logo" title = "" width="150" height="100">
-
-        </section>
-        <section class = "footer_section">
-            <!--Doe hier de barbershop links en niet de Figma default :)-->
-            <p class = "Bold">Use cases</p>
-            <p>&nbsp</p>
-            <p>UI design</p>
-            <p>UX design</p>
-            <p>Wireframing</p>
-            <p>Diagramming</p>
-            <p>Brainstorming</p>
-            <p>Online whiteboard</p>
-            <p>Team collaboration</p>
-        </section>
-        <section class = "footer_section">
-            <p class = "Bold">Explore </p>
-            <p>&nbsp</p>
-            <p>Design</p>
-            <p>Prototyping</p>
-            <p>Development features</p>
-            <p>Design systems</p>
-            <p>Collaboration features</p>
-            <p>Design process</p>
-            <p>FigJam</p>
-        </section>
-        <section class = "footer_section">
-            <p class = "Bold">Resources</p>
-            <p>&nbsp</p>
-            <p>Blog</p>
-            <p>Best practices</p>
-            <p>Colors</p>
-            <p>Color wheel</p>
-            <p>Support</p>
-            <p>Developers</p>
-            <p>Resource library</p>
-            
-        </section>
-    </footer>
+   
+        <footer>
+            <section>
+               <img src="img/Screenshot 2024-10-26 132408.png" alt = "the logo" title = "" width="150" height="100">
+    
+            </section>
+            <ul class = "footer_section1">
+                <li>
+                    <a href="index.html">Homepage</a>
+                </li>
+                <li>
+                    <a href="reviews.html">Reviews</a>
+                </li>
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+                <li>
+                    <a href="shoppage.html">Shoppage</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">About us</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                </ul>
+        </footer>
     <!--Nog een footer/section voor de cookies -->
 </body>
 </html>

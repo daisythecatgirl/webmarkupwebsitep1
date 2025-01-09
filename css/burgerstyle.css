@@ -7,9 +7,8 @@
     {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 40px;
-    padding: 10px;
+    width: 30px;
+    height: 20px;
     cursor: pointer;
     z-index: 2;
     }
@@ -48,7 +47,6 @@
     background-color: #12ABAD;
     color: #FFF;
     z-index: 1;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,7 +90,7 @@
 }
 @media only screen and (min-width: 769px)
 {
-    .mobilemenuu
+    .mobilehamburger
     {
         display: none;
     }

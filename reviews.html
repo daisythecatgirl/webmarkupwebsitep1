@@ -3,14 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="">
-    <meta name="author" content="Daisy">
-    <link rel="stylesheet" href="review_mystyle.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Your Barber Shop</title>
 </head>
 <body>
+    <header class="mobilehamburger">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <!--Hamburgermenu-->
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="menu">
+            <ul> 
+                <li><a href=index.html>Homepage</a></li>
+                <li><a href=reviews.html>Reviews</a></li>
+                <li><a href=services.html>Service</a></li>
+                <li><a href=aboutus.html>Over Ons</a></li>
+                <li><a href=shoppage.html>Winkel</a></li>
+                <li><a href=contact.html>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav id="mainmenu">
-        <a href="#">
+    <header class="pc-mainmenu">
+        <a href="index.html">
             <img src="img/logo.webp" alt="Logo" title="Your Barber Shop" width="40" height="40">
         </a>
         <ul>
@@ -19,10 +43,9 @@
             <li><a href=services.html>Service</a></li>
             <li><a href=aboutus.html>Over Ons</a></li>
             <li><a href=shoppage.html>Winkel</a></li>
-            <li><a href=contact.html>Contact</a></li>
+            <li><a href=contact.html class="contact-button">Contact</a></li>
         </ul>
-        
-    </nav>
+    </header>
 
 
     <header id="company_intro">
@@ -81,41 +104,27 @@
            <img src="img/Screenshot 2024-10-26 132408.png" alt = "the logo" title = "" width="150" height="100">
 
         </section>
-        <section class = "footer_section">
-            <p class = "Bold">Use cases</p>
-            <p>&nbsp</p>
-            <p>UI design</p>
-            <p>UX design</p>
-            <p>Wireframing</p>
-            <p>Diagramming</p>
-            <p>Brainstorming</p>
-            <p>Online whiteboard</p>
-            <p>Team collaboration</p>
-        </section>
-        <section class = "footer_section">
-            <p class = "Bold">Explore </p>
-            <p>&nbsp</p>
-            <p>Design</p>
-            <p>Prototyping</p>
-            <p>Development features</p>
-            <p>Design systems</p>
-            <p>Collaboration features</p>
-            <p>Design process</p>
-            <p>FigJam</p>
-        </section>
-        <section class = "footer_section">
-            <p class = "Bold">Resources</p>
-            <p>&nbsp</p>
-            <p>Blog</p>
-            <p>Best practices</p>
-            <p>Colors</p>
-            <p>Color wheel</p>
-            <p>Support</p>
-            <p>Developers</p>
-            <p>Resource library</p>
-            
-        </section>
+        <ul class = "footer_section1">
+            <li>
+                <a href="index.html">Homepage</a>
+            </li>
+            <li>
+                <a href="reviews.html">Reviews</a>
+            </li>
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+            <li>
+                <a href="shoppage.html">Shoppage</a>
+            </li>
+            <li>
+                <a href="aboutus.html">About us</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+            </ul>
     </footer>
-
+<!--Nog een footer/section voor de cookies -->
 </body>
 </html>
