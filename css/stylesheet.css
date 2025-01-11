@@ -1,5 +1,5 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -46,6 +46,10 @@ body {
     background-color: #FEF1F1;
 }
 
+#padding_space{
+    padding-bottom: 40px;
+    
+}
 
 
 .contact-button {
@@ -210,13 +214,16 @@ body {
 }
 
 #company_intro {
-    text-align: left;
+    
     margin: 2em auto;
     padding: 40px 20px;
     background-color: #FEF1F1;
     border-radius: 8px;
 }
-
+.img_4040{
+    height: 40px;
+    width: 40px;
+}
 
 main { 
     display: grid;
@@ -242,6 +249,7 @@ main {
     background-color: #FEF1F1;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 .review_card h3 {
@@ -262,16 +270,26 @@ main {
     margin-top: 10px;
 }
 
+.grid_5{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-column-start: 2;
+}
+
 main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
 
-
-article {
+.grid_2{
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+
+article {
+
     margin-bottom: 40px;
 }
 
@@ -280,9 +298,17 @@ figure {
     flex-shrink: 0;
 }
 
-img {
+.img_150_100{
+    width: 150px;
+    height: 100px;
+}
+
+.logo_img{
+    height: auto;
+}
+.img_width300{
     max-width: 300px;
-    border-radius: 8px;
+    height: auto;
 }
 
 h2 {
@@ -296,7 +322,7 @@ p {
     margin-bottom: 10px;
 }
 #shop_header {
-    text-align: left;
+    text-align: start;
     padding: 2em 0;
     margin: 2em auto;
     background-color: #FEF1F1;
@@ -311,6 +337,13 @@ p {
 #shop_header p {
     font-size: 1em;
     color: #000000;
+}
+
+.px_100_100{
+    height: 100px;
+    width: 100px
+
+
 }
 
 #product_grid {
@@ -333,7 +366,6 @@ p {
 
 #product_grid img {
     width: 100px;
-    height: auto;
     border-radius: 4px;
     margin-bottom: 10px;
 }
