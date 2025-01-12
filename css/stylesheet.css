@@ -43,7 +43,7 @@ body {
 }
 
 #padding_space{
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     
 }
 
@@ -208,15 +208,8 @@ body {
     margin: 0
 }
 
-#company_intro {
-    display: grid;
-    grid-template-rows: 30% 40% 30%;
-    grid-column-start: 2;
-    margin: 2em auto;
-    padding: 40px 20px;
-    background-color: #FEF1F1;
-    border-radius: 8px;
-}
+
+
 .img_4040{
     height: 40px;
     width: 40px;
@@ -380,7 +373,6 @@ p {
 footer {
     margin-top: 5%;
     background-color: #B2ABAB;
-    color: #060A0A;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -391,9 +383,15 @@ footer {
 
 footer > ul{
     list-style: none;
-    text-decoration: none;
+    
 }
 
+
+
+.outro > ul > li > a{
+    color: #000000;
+    text-decoration: none;
+}
 
 .Bold{
     font-weight: bold;
