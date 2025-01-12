@@ -39,10 +39,6 @@
 }
 
 body {
-    
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
     background-color: #FEF1F1;
 }
 
@@ -114,8 +110,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
-    max-width: 600px;
-    margin: 2em auto;
+   
     background-color: #FEF1F1;
     padding: 2em;
     border-radius: 8px;
@@ -214,7 +209,9 @@ body {
 }
 
 #company_intro {
-    
+    display: grid;
+    grid-template-rows: 30% 40% 30%;
+    grid-column-start: 2;
     margin: 2em auto;
     padding: 40px 20px;
     background-color: #FEF1F1;
@@ -270,10 +267,14 @@ main {
     margin-top: 10px;
 }
 
-.grid_5{
+.grid_2_start{
     display: grid;
-    grid-template-columns: 30% 40% 30%;
     grid-column-start: 2;
+}
+
+.grid_4_start{
+    display: grid;
+    grid-column-start: 4; 
 }
 
 main {
@@ -353,7 +354,6 @@ p {
     padding: 2em;
     max-width: 1000px;
     margin: auto;
-    flex: 1;
 }
 
 #product_grid section {
