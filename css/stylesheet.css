@@ -44,17 +44,28 @@ body {
 
 #padding_space{
     padding-bottom: 20px;
-    
+}
+#padding_space_2{
+    padding-bottom: 20px;
+}
+#padding_space_3{
+    padding-bottom: 20px;
+}
+#padding_space_4{
+    padding-bottom: 20px;
+}
+#padding_space_5{
+    padding-bottom: 20px;
 }
 
 
 .contact-button {
     padding: 8px 16px;
     background-color: #12ABAD;
-    color: white;
     border-radius:10px;
     border-style: solid;
     border-color: black;
+    border-width: medium;
 
     
 }
@@ -95,7 +106,7 @@ body {
     padding: 2em 0;
 }
 
-#contact_header h1 {
+#contact_header h2 {
     font-size: 2em;
     color: #333;
     margin-bottom: 10px;
@@ -146,6 +157,8 @@ body {
     border-radius: 4px;
     font-size: 1em;
     cursor: pointer;
+    border-style: double;
+    
 }
 
 #contact_form button:hover {
@@ -304,6 +317,11 @@ figure {
     max-width: 300px;
     height: auto;
 }
+#no_style{
+    text-decoration: none;
+    
+}
+
 
 h2 {
     font-size: 24px;
@@ -314,6 +332,14 @@ h2 {
 p {
     font-size: 16px;
     margin-bottom: 10px;
+    letter-spacing: normal;
+    line-height: normal;
+    text-indent: 0;
+    word-spacing: normal;
+}
+
+aside{
+    font-family: 'Noto Sans', sans-serif;
 }
 #shop_header {
     text-align: start;
@@ -371,7 +397,6 @@ p {
 
 
 footer {
-    margin-top: 5%;
     background-color: #B2ABAB;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -479,6 +504,13 @@ footer > ul{
     {
         display: none;
     }
+/* cookies */
+.cookies{
+    z-index: 9999;
+    position: static;
+    font-family: "Poppins";
+}
+
 
 @media only screen and (max-width: 768px)
 {
