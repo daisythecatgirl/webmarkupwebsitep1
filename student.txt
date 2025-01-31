@@ -1,0 +1,5 @@
+o	Student name: Daisy Verschoor
+o	Student number: 726163 
+o	Student class: 1infa 
+o	GitHub Repository: https://github.com/daisythecatgirl/webmarkupwebsitep1
+o	GitHub Pages URL: daisythecatgirl.github.io 
