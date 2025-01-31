@@ -57,6 +57,9 @@ body {
 #padding_space_5{
     padding-bottom: 20px;
 }
+#padding_space_6{
+    padding-bottom: 20px;
+}
 
 
 .contact-button {
@@ -158,6 +161,8 @@ body {
     font-size: 1em;
     cursor: pointer;
     border-style: double;
+    margin-top: 3px;
+    width: 100%;
     
 }
 
@@ -181,15 +186,12 @@ body {
     margin: auto;
 }
 
-.intro{
-    grid-column-start: 1;
 
-
-}
 
 #content img {
-    justify-content: start;
+    
     width: 300px;
+    
     
 }
 
@@ -197,29 +199,54 @@ body {
     background: #FEF1F1;
     padding: 20px;
 }
-
-.testimonial {
+#content_about_us {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    background-color: #FEF1F1;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+
+#content_about_us img {
+    justify-self:center;
+    width: 200px;
+    height: 300px;
+    
+}
+
+#content_about_us article {
+    background: #FEF1F1;
     padding: 20px;
-    margin-bottom: 20px;
-    width: 100%;
-    align-items: start;
 }
-
-.testimonial img {
-    width: 150px;
-    height: 225px;
-    object-fit: cover;
-    border-radius: 0;
+#content_services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 
-.testimonial p {
-    margin: 0
+
+#content_services img {
+    justify-self: center;
+    width: 300px;
+    height: auto;
+    
 }
+
+#content_services article {
+    background: #FEF1F1;
+    padding: 20px;
+}
+
+
+
+
 
 
 
@@ -234,12 +261,7 @@ main {
     padding: 0 20px;
 }
 
-.reviews_title h2 {
-    font-size: 20px;
-    text-align: left;
-    color: #333;
-    margin-bottom: 20px;
-}
+
 
 .reviews {
     display: grid;
@@ -273,15 +295,7 @@ main {
     margin-top: 10px;
 }
 
-.grid_2_start{
-    display: grid;
-    grid-column-start: 2;
-}
 
-.grid_4_start{
-    display: grid;
-    grid-column-start: 4; 
-}
 
 main {
     max-width: 800px;
@@ -289,10 +303,7 @@ main {
     padding: 20px;
 }
 
-.grid_2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+
 
 
 article {
@@ -512,14 +523,14 @@ footer > ul{
 }
 
 
-@media only screen and (max-width: 768px)
+@media only screen and (max-width: 767px)
 {
     .pc-mainmenu
     {
         display: none;
     }
 }
-@media only screen and (min-width: 769px)
+@media only screen and (min-width: 768px)
 {
     .mobilehamburger
     {
